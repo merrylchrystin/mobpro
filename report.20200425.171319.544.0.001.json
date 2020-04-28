@@ -1,0 +1,198 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200425.171319.544.0.001.json",
+    "dumpEventTime": "2020-04-25T17:13:19Z",
+    "dumpEventTimeStamp": "1587809599685",
+    "processId": 544,
+    "threadId": null,
+    "cwd": "C:\\Users\\Costumer\\project1",
+    "commandLine": [
+      "node",
+      "C:\\Users\\Costumer\\AppData\\Roaming\\npm\\\\node_modules\\expo-cli\\bin\\expo.js",
+      "start"
+    ],
+    "nodejsVersion": "v12.16.2",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.16.2",
+      "v8": "7.8.279.23-node.34",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1e",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.2/node-v12.16.2-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.2/node-v12.16.2.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.16.2/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.18362",
+    "osVersion": "Windows 10 Home Single Language",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "AMD A4-9120 RADEON R3, 4 COMPUTE CORES 2C+2G   ",
+        "speed": 2196,
+        "user": 714125,
+        "nice": 0,
+        "sys": 1137640,
+        "idle": 2974734,
+        "irq": 37062
+      },
+      {
+        "model": "AMD A4-9120 RADEON R3, 4 COMPUTE CORES 2C+2G   ",
+        "speed": 2196,
+        "user": 642125,
+        "nice": 0,
+        "sys": 1066109,
+        "idle": 3117953,
+        "irq": 36187
+      }
+    ],
+    "host": "LAPTOP-IGS7JFHU"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff6abc22309",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6abc26869",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6abc256e8",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6abd4dd82",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6ac56a27e",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6ac552351",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6ac41e8ac",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6ac426831",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6ac41be03",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6ac41a474",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6ac43b67d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6ac1a13d1",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6ac9b730d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6aca212e4",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6ac93c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6ac93c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6ac93c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6ac93c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6ac93c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6ac9d6182",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6ac93c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6ac93c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6ac93c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6ac93c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6ac93c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6ac93c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6ac93c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6ac93c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6ac9d6182",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6ac93c2bc",
+      "symbol":
