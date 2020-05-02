@@ -1,20 +1,37 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Header from './Header';
+import Greeting from './Greeting';
+import Input from './components/Input';
+import Layout from './components/Layout';
+import List from './components/List';
 
-const App = () => {
+class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      greeting: 'Welcome'
+    }
+  }
+
+  componentDidMount(){
+
+  }
+
+render() {
   return (
-    <View style={styles.container}>
-      <Header />
-      <Text>God Bless You</Text>
-    </View>
-  );
+    // <View style={styles.container}>
+    //   <Greeting text={this.state.greeting}/>
+    //   <Text>{this.state.greeting}</Text>
+    // </View>
+    <Greeting/>
+  )
+}
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
   },
