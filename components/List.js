@@ -1,62 +1,54 @@
 import React from 'react';
-import { View, Text, FlatList } from 'react-native';
+import { View, Text, FlatList, Image } from 'react-native';
 
 class List extends React.Component{
     constructor(){
         super();
         this.state = {
-            students: [
-                {
-                    id: 1,
-                    name: 'Kookie',
-                    faculty: 'Computer Science'
-                },
-                {
-                    id: 2,
-                    name: 'Hoshi',
-                    faculty: 'Nurse'
-                },
-                {
-                    id: 3,
-                    name: 'Moci',
-                    faculty: 'Bussiness'
-                },
-                {
-                    id: 4,
-                    name: 'Nana',
-                    faculty: 'Computer Science'
-                },
-            ],
+            users: [],
             refreshing: false
         }
     }
 
-    renderItem = (item) => (
-    <View style={{ padding: 20, borderBottomWidth: 1, borderBottomColor: 'black'}}>
+    renderItem = ({item}) => (
+    <View style={{ flex: 1, flexDirection: 'row', padding: 20, borderBottomWidth: 1, borderBottomColor: '#000'}}>
+        <Image source = {{ url : `https://robohash.org/${item.id}?set=set1`}}
+        style={{ width: 50, height: 50}}/>
+        <View>
         <Text>Name : {item.name}</Text>;
-        <Text>Faculty : {item.faculty}</Text>;
+        <Text>Username : {item.username}</Text>;
+        </View>
     </View>
     )
 
     onRefresh = () => {
-        this.setState({ refreshing: true})
-        const data = this.state.students.concat({id: 5, name: 'Tata', faculty: 'Nurse'})
-        this.setState({
-            refreshing: true,
-            students : data,
-        })
+        this.getDataApi();
+    }
+    
+    componentDidMount = () => {
+        this.getDataApi();
+    }
+
+    getDataApi = async() => {
+        this.setState({ refreshing: true })
+        // fetch('https://jsonplaceholder.typicode.com/users')
+        // .then(response => response.json())
+        // .then(json => this.setState({ users: json, refreshing: false }))
+        const response = await fetch('https://jsonplaceholder.typicode.com/users');
+        const json = await response.json();
+        this.setState({ users: json, refreshing: false })
     }
     render(){
-        //const listStudents = this.state.students.map(this.renderItem)
-        //const listStudents = this.state.students.map{students => <Text key={student.id}>{student.name}</Text>}
+
         return(
             <View>
                 <FlatList
-                    data={this.state.students}
+                    data={this.state.users}
                     keyExtractor={item => item.id.toString()}
                     renderItem={this.renderItem}
                     refreshing={true}
                     onRefresh= {this.onRefresh}
+                    showsVerticalScrollIndicator={false}
                 />
             </View>
         )
